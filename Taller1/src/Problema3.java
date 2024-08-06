@@ -1,3 +1,4 @@
+//Andres Mauricio Moreno Garavito - Programación orientada a Objetos - Uniminuto
 import java.util.Scanner;
 
 public class Problema3 {
@@ -15,7 +16,7 @@ public class Problema3 {
             System.out.println("4. Cierre de Mes");
             System.out.println("5. Salir");
             int opcion = scanner.nextInt();
-            scanner.nextLine(); // Limpiar el buffer
+            scanner.nextLine();
 
             switch (opcion) {
                 case 1:
@@ -51,7 +52,7 @@ public class Problema3 {
         String apellidos = scanner.nextLine();
         System.out.print("Edad: ");
         int edad = scanner.nextInt();
-        scanner.nextLine(); // Limpiar el buffer
+        scanner.nextLine();
 
         String representante = "";
         if (edad < 18) {
@@ -65,11 +66,11 @@ public class Problema3 {
         System.out.println("1. Ahorro");
         System.out.println("2. Corriente");
         int tipoCuenta = scanner.nextInt();
-        scanner.nextLine(); // Limpiar el buffer
+        scanner.nextLine();
 
         System.out.print("Monto inicial: ");
         double montoInicial = scanner.nextDouble();
-        scanner.nextLine(); // Limpiar el buffer
+        scanner.nextLine();
 
         System.out.print("Número de cuenta: ");
         String numeroCuenta = scanner.nextLine();
@@ -96,7 +97,7 @@ public class Problema3 {
         String cuentaDestino = scanner.nextLine();
         System.out.print("Monto a transferir: ");
         double monto = scanner.nextDouble();
-        scanner.nextLine(); // Limpiar el buffer
+        scanner.nextLine();
 
         banco.transferir(cuentaOrigen, cuentaDestino, monto);
     }
@@ -106,7 +107,7 @@ public class Problema3 {
         String numeroCuenta = scanner.nextLine();
         System.out.print("Monto a retirar: ");
         double monto = scanner.nextDouble();
-        scanner.nextLine(); // Limpiar el buffer
+        scanner.nextLine();
         System.out.print("¿El cajero es propio del banco? (si/no): ");
         boolean esCajeroPropio = scanner.nextLine().equalsIgnoreCase("si");
 
