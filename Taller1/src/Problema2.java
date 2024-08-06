@@ -34,7 +34,7 @@ public class Problema2 {
             double eslora = scanner.nextDouble();
             System.out.print("Año de fabricación: ");
             int anioFabricacion = scanner.nextInt();
-            scanner.nextLine();  // Limpiar el buffer
+            scanner.nextLine();
 
             Barco barco = new Barco(matricula, eslora, anioFabricacion);
 
@@ -46,7 +46,7 @@ public class Problema2 {
             LocalDate fechaFin = LocalDate.parse(scanner.nextLine(), formatter);
             System.out.print("Posición del amarre: ");
             int posicionAmarre = scanner.nextInt();
-            scanner.nextLine();  // Limpiar el buffer
+            scanner.nextLine();
 
             Alquiler alquiler = new Alquiler(clienteBarco, barco, fechaInicio, fechaFin, posicionAmarre);
 
